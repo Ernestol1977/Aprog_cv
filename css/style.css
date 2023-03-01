@@ -235,7 +235,7 @@ img {
 }
 
 .btn-close {
-    border-radius: 50px;
+    border-radius: 25px;
     font-size: 1.8rem;
 }
 
@@ -250,7 +250,27 @@ img {
     margin-left: auto;
 }
 
+.form__input {
+    border-radius: 0.5rem;
+    border: 1px solid #9d9282;
 
+}
+
+.form__input--mensaje {
+    resize: none;
+    margin-bottom: 4rem;
+}
+
+.form__button {
+    border: 1px solid #9d9282;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.form__button:hover {
+    color: #ffffff;
+    background-color: #4E4533;
+}
 
 /* Footer */
 
