@@ -1,0 +1,275 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/*
+Font families
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Noto Sans Bamum', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Globales */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Noto Sans Bamum', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor-1000 {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+
+.header {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .foto__perfil {
+    height: 15rem;
+    border: .1rem solid #e2e1e1;
+    padding: 0.5rem;
+    border-radius: .4rem;
+
+}
+
+.titulo {
+    display: inline;
+    margin-left: 10rem;
+    text-align: center;
+}
+
+.lineaDivisoria {
+    border-top: 0.1rem solid #888;
+    padding: 2rem 0;
+}
+
+/* Barra Navegación */
+.nav__menu {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.nav__menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav__menu ul li {
+    display: inline-block;
+}
+
+.nav__menu ul li a {
+    display: block;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    transition: .2s ease-in-out;
+}
+
+.nav__menu ul li a:hover {
+    color: crimson;
+    border-top: 3px solid crimson;
+}
+
+/* Sobre Mí */
+.sobreMi {
+    margin-top: 4rem;
+    text-align: justify;
+}
+
+.sobreMi p {
+    padding: 1rem 0;
+}
+
+.sobreMi p spam {
+    font-weight: 700;
+}
+
+/* Experiencias y Habilidades */
+
+.experiencia {
+    margin-top: 4rem;
+}
+
+.hab__duras,
+.hab__blandas {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.exp__tabla {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.exp__tabla td,
+.exp__tabla th {
+    padding: .8rem;
+}
+
+.exp__tabla th {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: left;
+    background-color: #4e4533;
+    color: #ffffff;
+    letter-spacing: .2rem;
+}
+
+.exp__tabla tr:nth-child(odd) {
+    background-color: #beb19e;
+}
+
+
+/* Otros Datos */
+
+.otrosDatos {
+    margin-top: 4rem;
+}
+
+.otrosDatos ul {
+    list-style-type: circle;
+}
+
+/* Datos  Personales */
+
+.sDatosPersonales {
+    padding-top: 4rem;
+}
+
+.dPersonales__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.datosPersonales {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;   
+}
+
+.datosPersonales span {
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* Go top */
+.gotop-container {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: -1;
+}
+
+.gotop-button {
+    width: 0rem;
+    height: 0rem;
+    background-color: #4E4533;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.gotop-button i {
+    position: absolute;
+    font-size: 2rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color:#ffffff;
+    transition: .2s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .gotop-button {
+    animation: popup .3s ease-in-out;
+    width: 6rem;
+    height: 6rem;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);    
+}
+
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 8rem;
+        height: 8rem;
+    }
+    100% {
+        width: 6rem;
+        height: 6rem;
+    }
+}
