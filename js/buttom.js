@@ -1,4 +1,4 @@
-window.onscroll = function() {
+window.onscroll = function () {
     if (document.documentElement.scrollTop > 250) {
         document.querySelector('.gotop-container').classList.add('show');
     } else {
@@ -12,3 +12,10 @@ document.querySelector('.gotop-container').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+let modal = document.getElementById('modalbtn')
+modal.addEventListener('click', (evt) => {
+    evt.preventDefault
+    let form = document.getElementById('staticBackdrop')
+    form.style.zIndex = '12'
+}) 
