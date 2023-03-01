@@ -205,6 +205,30 @@ img {
     font-weight: 700;
 }
 
+/* Contacto */
+
+.contacto {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.form {
+    background-color: #BEB19E;
+    /* max-width: 60%; */
+    margin: auto;
+    border-radius: .5rem;
+    padding: 3rem 3rem;
+    box-shadow: 10px 10px 20px 0 #888;
+}
+
+.form__container {
+    display: grid;
+    gap: 0.5rem;
+}
+
+
+
+
 /* Footer */
 
 footer {

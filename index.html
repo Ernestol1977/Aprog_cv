@@ -126,6 +126,33 @@
 
     </section>
 
+    <form action="" id="contacto" class="contacto contenedor-1000">
+        <div class="form form__container">
+            <h3 class="form__title">Contacto</h3>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" class="form__input" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="form__input" required>
+            <div>
+                <label for="horario">Contactar preferentemente dentro de la banda horaria:</label><br>
+                <input type="radio" name="horario" value="0810">
+                <label for="0810">de 8 a 10 hs.</label>
+                <input type="radio" name="horario" value="1012">
+                <label for="1012">de 10 a 12 hs.</label>
+                <input type="radio" name="horario" value="1214">
+                <label for="1214">de 12 a 14 hs.</label>
+                <input type="radio" name="horario" value="1416">
+                <label for="1416">de 14 a 16 hs.</label>
+                <label for="sinEspecificar">Sin predilección (8 a 16 hs.)</label>
+                <input type="radio" name="horario" value="Sin especificar" checked/>
+
+            </div>
+            <label for="comentario">Dejame tu mensaje</label>
+            <textarea name="comentario" id="" placeholder="Mensaje..." class="form__input form__input--mensaje"></textarea>
+            <button type="submit" class="form__button">Enviar</button>
+        </div>
+    </form>
+
     <footer>
         <p><em>Su contenido es privado, cualquier uso inadecuado del mismo no esta autorizado por su autor.</em></p>
     </footer>
