@@ -1,0 +1,12 @@
+.sobreMi {
+    margin-top: 4rem;
+    text-align: justify;
+}
+
+.sobreMi p {
+    padding: 1rem 0;
+}
+
+.sobreMi p spam {
+    font-weight: 700;
+}

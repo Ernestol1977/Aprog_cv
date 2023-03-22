@@ -1,0 +1,25 @@
+.header {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .foto__perfil {
+    height: 15rem;
+    border: .1rem solid #e2e1e1;
+    padding: 0.5rem;
+    border-radius: .4rem;
+
+}
+
+.titulo {
+    display: inline;
+    margin-left: 10rem;
+    text-align: center;
+}
+
+.lineaDivisoria {
+    border-top: 0.1rem solid #888;
+    padding: 2rem 0;
+}

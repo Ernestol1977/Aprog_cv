@@ -1,0 +1,33 @@
+.experiencia {
+    margin-top: 4rem;
+}
+
+.hab__duras,
+.hab__blandas {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.exp__tabla {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.exp__tabla td,
+.exp__tabla th {
+    padding: .8rem;
+}
+
+.exp__tabla th {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: left;
+    background-color: #4e4533;
+    color: #ffffff;
+    letter-spacing: .2rem;
+}
+
+.exp__tabla tr:nth-child(odd) {
+    background-color: #beb19e;
+}

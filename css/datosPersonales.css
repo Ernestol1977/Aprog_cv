@@ -1,0 +1,17 @@
+.sDatosPersonales {
+    padding-top: 4rem;
+}
+
+.dPersonales__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.datosPersonales {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;   
+}
+
+.datosPersonales span {
+    font-weight: 700;
+}
